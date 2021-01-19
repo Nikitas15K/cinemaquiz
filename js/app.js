@@ -20,6 +20,7 @@ for (let i = 0; i < lengthDir; i++) {
 
 
 function showSuccessOrNotA(event) {
+    //button user presses
     let button = event.target;
     let question = button.parentElement;
     let answers = question.querySelector('select');
@@ -65,6 +66,7 @@ function showSuccessOrNotD(event) {
 
     let button = event.target;
     let answers = button.parentElement;
+    // if user has chosen an answer
     if (answers.querySelector('div label input[type="radio"]:checked') !== null) {
         let answer = answers.querySelector('div label input[type="radio"]:checked').value;
         let question = answers.querySelector('div p');
@@ -104,6 +106,7 @@ function showSuccessOrNotD(event) {
 
         question.style.color = "white";
     }
+    // if user has not chosen an answer
     else {
         button.innerHTML = "You have not answered this question.";
         setTimeout(function () {
@@ -112,43 +115,3 @@ function showSuccessOrNotD(event) {
     }
 
 }
-
-
-
-//     }
-
-//     console.log(length);
-// }
-    // for (let j=0, j<length, j++){
-    //    console.log(document.documentElement.parentElement);
-
-    // }
-
-//     if (answer1 === "error") {
-//         document.getElementById("answers1").style.color = "red";
-//     }
-//     else if (answer1 === "correct") {
-//         document.getElementById("answers1").style.color = "green";
-//     }
-
-//     let answer2 = document.querySelector('option[name="js_package_manager"]:checked').value;
-//     if (answer2 === "error") {
-//         document.getElementById("answers2").style.color = "red";
-//     }
-//     else if (answer2 === "correct") {
-//         document.getElementById("answers2").style.color = "green";
-//     }
-
-//     let answer3 = document.querySelector('option[name="quality_tool"]:checked').value;
-//     if (answer3 === "error") {
-//         document.getElementById("answers3").style.color = "red";
-//     }
-//     else if (answer3 === "correct") {
-//         document.getElementById("answers3").style.color = "green";
-//     }
-
-
-
-// }
-
-
